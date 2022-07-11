@@ -243,4 +243,9 @@ body {
   margin: 0 auto;
   padding-top: 5px;
   width: 2.4rem;
+}
+
+.mainIndex {
+  height: 100vh;
+  background-color: #000a2f;
 }/*# sourceMappingURL=styles.css.map */
