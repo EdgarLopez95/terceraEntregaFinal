@@ -217,6 +217,11 @@ body {
   display: none;
 }
 
+.mainIndex {
+  height: 100vh;
+  background-color: #000a2f;
+}
+
 @media screen and (max-width: 768px) {
   .heder .nav {
     display: none;
@@ -239,12 +244,12 @@ body {
     display: flex;
     justify-content: center;
     line-height: 20px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #171b2c;
     border-width: 0 1px 0 0;
   }
   .heder .navCelu ul li a img {
     margin: 0 auto;
-    padding-top: 5px;
-    width: 24px;
+    padding-top: 15px;
+    width: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */
