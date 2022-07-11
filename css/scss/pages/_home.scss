@@ -1,0 +1,40 @@
+.heder {
+  width: 100%;
+  height: 10rem;
+  padding: 0 4rem;
+  background-color: $colorAzulOscuro;
+  display: grid;
+  align-items: center;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      a {
+        img {
+          width: 6rem;
+        }
+      }
+    }
+    .menu {
+      color: white;
+      display: flex;
+      align-items: center;
+
+      ul {
+        a {
+          font-size: 1.5rem;
+          margin: 0 10px 0 0;
+        }
+      }
+      .resume {
+        a {
+          color: $colorAzulOscuro;
+          @extend %button;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
