@@ -183,14 +183,10 @@ body {
   font-size: 1.5rem;
 }
 
-.heder {
+.heder .nav {
   width: 100%;
   height: 10rem;
   background-color: #02081e;
-  display: grid;
-  align-items: center;
-}
-.heder .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -218,34 +214,37 @@ body {
   font-weight: bold;
 }
 .heder .navCelu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #02081e;
-  display: grid;
-  align-items: center;
-}
-.heder .navCelu ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px;
-  justify-content: space-around;
-  color: white;
-}
-.heder .navCelu ul li {
-  display: flex;
-  justify-content: center;
-  line-height: 20px;
-  border: 1px solid #e2e2e2;
-  border-width: 0 1px 0 0;
-}
-.heder .navCelu ul li a img {
-  margin: 0 auto;
-  padding-top: 5px;
-  width: 24px;
+  display: none;
 }
 
-.mainIndex {
-  height: 100vh;
-  background-color: #000a2f;
+@media screen and (max-width: 768px) {
+  .heder .nav {
+    display: none;
+  }
+  .heder .navCelu {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #02081e;
+  }
+  .heder .navCelu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    justify-content: space-around;
+    color: white;
+  }
+  .heder .navCelu ul li {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    border: 1px solid #e2e2e2;
+    border-width: 0 1px 0 0;
+  }
+  .heder .navCelu ul li a img {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */
