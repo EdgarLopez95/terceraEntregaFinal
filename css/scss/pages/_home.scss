@@ -12,24 +12,12 @@
       .sectionIndex-uno__titulo {
         font-weight: 700;
         color: white;
-        font-size: 6.4rem;
+        font-size: 4.4rem;
         text-align: center;
-        animation-name: animacionTexto;
-        animation-duration: 5s;
         margin: 0 50px;
-        line-height: 90px;
+        line-height: 50px;
       }
-      @keyframes animacionTexto {
-        from {
-          opacity: 0;
-          font-size: 5.4rem;
-        }
 
-        to {
-          opacity: 1;
-          font-size: 6.4rem;
-        }
-      }
     }
   }
   .sectionIndex-dos {

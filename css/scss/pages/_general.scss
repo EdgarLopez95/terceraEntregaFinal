@@ -1,86 +1,86 @@
 .heder {
-    .nav {
-      width: 100%;
-      height: 10rem;
-      background-color: $colorFondoOscuro;
+  .nav {
+    width: 100%;
+    height: 10rem;
+    background-color: $colorFondoOscuro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+
+    .logo {
+      a {
+        img {
+          width: 6rem;
+        }
+      }
+    }
+    .menu {
+      color: white;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 0 4rem;
-  
-      .logo {
+
+      ul {
+        font-family: $tipografiaSecundaria;
         a {
-          img {
-            width: 6rem;
-          }
+          font-size: 1.5rem;
+          margin: 0 15px 0 0;
+        }
+        a:hover {
+          color: #036;
+          background-color: #fff;
+          padding: 5px;
         }
       }
-      .menu {
-        color: white;
-        display: flex;
-        align-items: center;
-  
-        ul {
-          font-family: $tipografiaSecundaria;
-          a {
-            font-size: 1.5rem;
-            margin: 0 15px 0 0;
-          }
-          a:hover {
-            color: #036;
-            background-color: #fff;
-            padding: 5px;
-          }
+      .resume {
+        a {
+          color: $colorAzulOscuro;
+          @extend %button;
+          font-weight: bold;
         }
-        .resume {
-          a {
-            color: $colorAzulOscuro;
-            @extend %button;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    .navCelu {
-      display: none;
-    }
-  }
-  .footer {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    .izquierdo {
-      @extend %estilosFooter;
-      background-color: $colorFondoOscuro;
-      h3 {
-        @extend %h3titulos;
-      }
-      nav {
-        ul {
-          margin-top: 10px;
-        }
-      }
-    }
-    .centro {
-      @extend %estilosFooter;
-      background-color: $colorAmarillo;
-      color: $colorAzulOscuro;
-      h3 {
-        @extend %h3titulos;
-        border-bottom: 1px solid $colorFondoOscuro;
-      }
-      p {
-        margin: 20px 0;
-      }
-    }
-    .derecho {
-      @extend %estilosFooter;
-      background-color: $colorFondoOscuro;
-      h3 {
-        @extend %h3titulos;
-      }
-      img {
-        width: 30px;
-        margin: 5px auto;
       }
     }
   }
+  .navCelu {
+    display: none;
+  }
+}
+.footer {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  .izquierdo {
+    @extend %estilosFooter;
+    background-color: $colorFondoOscuro;
+    h3 {
+      @extend %h3titulos;
+    }
+    nav {
+      ul {
+        margin-top: 10px;
+      }
+    }
+  }
+  .centro {
+    @extend %estilosFooter;
+    background-color: $colorAmarillo;
+    color: $colorAzulOscuro;
+    h3 {
+      @extend %h3titulos;
+      border-bottom: 1px solid $colorFondoOscuro;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+  .derecho {
+    @extend %estilosFooter;
+    background-color: $colorFondoOscuro;
+    h3 {
+      @extend %h3titulos;
+    }
+    img {
+      width: 30px;
+      margin: 5px auto;
+    }
+  }
+}
