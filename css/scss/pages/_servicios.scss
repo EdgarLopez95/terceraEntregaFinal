@@ -1,0 +1,93 @@
+.mainServicios {
+  .sectionServicios-uno {
+    width: 100%;
+    min-height: 700px;
+    background-color: $colorFondoOscuro;
+    h2 {
+      font-weight: 900;
+      color: white;
+      font-size: 8.4rem;
+      line-height: 400px;
+      text-align: center;
+    }
+    .servicios {
+      max-width: 1200px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 200px;
+      gap: 30px;
+      
+      .izquierda {
+        background-color: $colorAmarillo;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px;
+        margin: 0 auto;
+        h3 {
+            font-weight: 900;
+            color:$colorFondoOscuro;
+            font-size: 5.4rem;
+            line-height: 200px;
+            text-align: center;
+          }
+      }
+      .derecha {
+        background-color: $colorAmarillo;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px;
+        margin: 0 auto;
+        h3 {
+            font-weight: 900;
+            color:$colorFondoOscuro;
+            font-size: 5.4rem;
+            line-height: 200px;
+            text-align: center;
+          }
+      }
+    }
+  }
+  .sectionRecorrido-dos {
+    margin: 50px 0;
+    .gridRecorridoDos {
+      margin: 0 auto;
+      max-width: $anchoMaximo;
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .sectionRecorrido-dos-izquierda {
+        div {
+          img {
+            background-color: #bccad3;
+            width: 90%;
+            margin: 0 auto;
+            height: 500px;
+            border-radius: 50px;
+          }
+        }
+      }
+      .sectionRecorrido-dos-derecha {
+        div {
+          width: 90%;
+          h3 {
+            font-size: 3.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $colorAzulOscuro;
+            padding: 20px 0;
+            font-weight: 900;
+            line-height: 30px;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 20px;
+            max-width: 600px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

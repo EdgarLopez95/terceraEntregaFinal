@@ -2,7 +2,7 @@
 :root {
   --negro: #393939;
   /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-principal: "Roboto", sans-serif;
   --tipo-secundaria: Verdana;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .footer .derecho, .footer .centro, .footer .izquierdo {
-  height: 100%;
+  width: 100%;
   width: 100%;
   background-color: #02081e;
   color: white;
@@ -220,6 +220,9 @@ body {
   display: flex;
   align-items: center;
 }
+.heder .nav .menu ul {
+  font-family: "Roboto Mono", monospace;
+}
 .heder .nav .menu ul a {
   font-size: 1.5rem;
   margin: 0 15px 0 0;
@@ -237,13 +240,8 @@ body {
   display: none;
 }
 
-.mainIndex {
-  height: 70vh;
-  background-color: #000a2f;
-}
-
 .footer {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .footer .izquierdo {
@@ -268,6 +266,260 @@ body {
 .footer .derecho img {
   width: 30px;
   margin: 5px auto;
+}
+
+.mainIndex .sectionIndex-uno {
+  background-image: url(../assets/banner-home.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.mainIndex .sectionIndex-uno div .sectionIndex-uno__titulo {
+  font-weight: 700;
+  color: white;
+  font-size: 6.4rem;
+  text-align: center;
+  -webkit-animation-name: animacionTexto;
+          animation-name: animacionTexto;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  margin: 0 50px;
+  line-height: 90px;
+}
+@-webkit-keyframes animacionTexto {
+  from {
+    opacity: 0;
+    font-size: 5.4rem;
+  }
+  to {
+    opacity: 1;
+    font-size: 6.4rem;
+  }
+}
+@keyframes animacionTexto {
+  from {
+    opacity: 0;
+    font-size: 5.4rem;
+  }
+  to {
+    opacity: 1;
+    font-size: 6.4rem;
+  }
+}
+.mainIndex .sectionIndex-dos {
+  margin: 50px 0;
+}
+.mainIndex .sectionIndex-dos .gridIndexDos {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.mainIndex .sectionIndex-dos .gridIndexDos .sectionIndex-dos-izquierda div img {
+  background-color: #bccad3;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 50px;
+}
+.mainIndex .sectionIndex-dos .gridIndexDos .sectionIndex-dos-derecha div {
+  width: 90%;
+}
+.mainIndex .sectionIndex-dos .gridIndexDos .sectionIndex-dos-derecha div h3 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000a2f;
+  padding: 20px 0;
+  font-weight: 900;
+  line-height: 30px;
+}
+.mainIndex .sectionIndex-dos .gridIndexDos .sectionIndex-dos-derecha div p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.mainRecorrido .sectionRecorrido-uno {
+  width: 100%;
+  min-height: 400px;
+  background-color: #02081e;
+}
+.mainRecorrido .sectionRecorrido-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainRecorrido .sectionRecorrido-dos {
+  margin: 50px 0;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-izquierda div img {
+  background-color: #bccad3;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 50px;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div {
+  width: 90%;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div h3 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000a2f;
+  padding: 20px 0;
+  font-weight: 900;
+  line-height: 30px;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.mainortafolio .sectionPortafolio-uno {
+  width: 100%;
+  min-height: 400px;
+  background-color: #02081e;
+}
+.mainortafolio .sectionPortafolio-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainortafolio .sectionPortafolio-dos {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: 32rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+.mainortafolio .sectionPortafolio-dos div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainServicios .sectionServicios-uno {
+  width: 100%;
+  min-height: 700px;
+  background-color: #02081e;
+}
+.mainServicios .sectionServicios-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainServicios .sectionServicios-uno .servicios {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 30px;
+}
+.mainServicios .sectionServicios-uno .servicios .izquierda {
+  background-color: #ffd400;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.mainServicios .sectionServicios-uno .servicios .izquierda h3 {
+  font-weight: 900;
+  color: #02081e;
+  font-size: 5.4rem;
+  line-height: 200px;
+  text-align: center;
+}
+.mainServicios .sectionServicios-uno .servicios .derecha {
+  background-color: #ffd400;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.mainServicios .sectionServicios-uno .servicios .derecha h3 {
+  font-weight: 900;
+  color: #02081e;
+  font-size: 5.4rem;
+  line-height: 200px;
+  text-align: center;
+}
+.mainServicios .sectionRecorrido-dos {
+  margin: 50px 0;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-izquierda div img {
+  background-color: #bccad3;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 50px;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div {
+  width: 90%;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div h3 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000a2f;
+  padding: 20px 0;
+  font-weight: 900;
+  line-height: 30px;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.sectionContacto-uno {
+  width: 100%;
+  min-height: 400px;
+  background-color: #02081e;
+}
+.sectionContacto-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -299,5 +551,14 @@ body {
     margin: 0 auto;
     padding-top: 15px;
     width: 20px;
+  }
+  .mainIndex .sectionIndex-dos .gridIndexDos {
+    grid-template-columns: 1fr;
+  }
+  .mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

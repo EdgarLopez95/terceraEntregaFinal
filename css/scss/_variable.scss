@@ -2,6 +2,7 @@ $colorFondoOscuro: #02081e;
 $colorAzulOscuro: #000a2f;
 $colorAmarillo: #ffd400;
 $anchoMaximo: 1200px;
+$tipografiaSecundaria: 'Roboto Mono', monospace;
 
 %button {
   border: none;
@@ -13,7 +14,7 @@ $anchoMaximo: 1200px;
 }
 
 %estilosFooter {
-  height: 100%;
+  width: 100%;
   width: 100%;
   background-color: $colorFondoOscuro;
   color: white;
@@ -31,5 +32,4 @@ $anchoMaximo: 1200px;
   padding-bottom: 10px;
   border-bottom: 1px solid white;
   width: 20%;
-  
 }

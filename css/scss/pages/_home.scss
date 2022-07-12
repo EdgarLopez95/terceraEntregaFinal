@@ -1,90 +1,78 @@
-.heder {
-  .nav {
-    width: 100%;
-    height: 10rem;
-    background-color: $colorFondoOscuro;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 4rem;
-
-    .logo {
-      a {
-        img {
-          width: 6rem;
-        }
-      }
-    }
-    .menu {
-      color: white;
-      display: flex;
-      align-items: center;
-
-      ul {
-        a {
-          font-size: 1.5rem;
-          margin: 0 15px 0 0;
-        }
-        a:hover {
-          color: #036;
-          background-color: #fff;
-          padding: 5px;
-        }
-      }
-      .resume {
-        a {
-          color: $colorAzulOscuro;
-          @extend %button;
-          font-weight: bold;
-        }
-      }
-    }
-  }
-  .navCelu {
-    display: none;
-  }
-}
 .mainIndex {
-  height: 70vh;
-  background-color: $colorAzulOscuro;
-}
+  .sectionIndex-uno {
+    background-image: url(../assets/banner-home.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    div {
+      .sectionIndex-uno__titulo {
+        font-weight: 700;
+        color: white;
+        font-size: 6.4rem;
+        text-align: center;
+        animation-name: animacionTexto;
+        animation-duration: 5s;
+        margin: 0 50px;
+        line-height: 90px;
+      }
+      @keyframes animacionTexto {
+        from {
+          opacity: 0;
+          font-size: 5.4rem;
+        }
 
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  .izquierdo {
-    @extend %estilosFooter;
-    background-color: $colorFondoOscuro;
-    h3 {
-        @extend %h3titulos;
-    }
-    nav {
-      ul {
-        margin-top: 10px;
+        to {
+          opacity: 1;
+          font-size: 6.4rem;
+        }
       }
     }
   }
-  .centro {
-    @extend %estilosFooter;
-    background-color: $colorAmarillo;
-    color: $colorAzulOscuro;
-    h3{
-        @extend %h3titulos;
-        border-bottom: 1px solid $colorFondoOscuro;
-    }
-    p{
-        margin: 20px 0;
-    }
-  }
-  .derecho {
-    @extend %estilosFooter;
-    background-color: $colorFondoOscuro;
-    h3{
-        @extend %h3titulos;
-    }
-    img {
-      width: 30px;
-      margin: 5px auto;
+  .sectionIndex-dos {
+    margin: 50px 0;
+    .gridIndexDos {
+      margin: 0 auto;
+      max-width: $anchoMaximo;
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .sectionIndex-dos-izquierda {
+        div {
+          img {
+            background-color: #bccad3;
+            width: 90%;
+            margin: 0 auto;
+            height: 500px;
+            border-radius: 50px;
+          }
+        }
+      }
+      .sectionIndex-dos-derecha {
+        div {
+          width: 90%;
+          h3 {
+            font-size: 3.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $colorAzulOscuro;
+            padding: 20px 0;
+            font-weight: 900;
+            line-height: 30px;
+          }
+          p{
+            font-size: 1.6rem;
+            line-height: 20px;
+            max-width: 600px;
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
   }
 }
+

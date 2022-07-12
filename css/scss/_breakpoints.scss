@@ -1,33 +1,42 @@
 @media screen and (max-width: 768px) {
-    .heder .nav {
-        display: none;
-    }
-    .heder .navCelu {
-        display: block;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: $colorFondoOscuro;
-        ul {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-          grid-template-rows: 50px;
-          justify-content: space-around;
-          color: white;
-          li {
-            display: flex;
-            justify-content: center;
-            line-height: 20px;
-            border: 1px solid #171b2c;
-            border-width: 0 1px 0 0;
-            a{
-                img{
-                    margin: 0 auto;
-                    padding-top: 15px;
-                    width: 20px;
-                }
-            }
+  .heder .nav {
+    display: none;
+  }
+  .heder .navCelu {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $colorFondoOscuro;
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50px;
+      justify-content: space-around;
+      color: white;
+      li {
+        display: flex;
+        justify-content: center;
+        line-height: 20px;
+        border: 1px solid #171b2c;
+        border-width: 0 1px 0 0;
+        a {
+          img {
+            margin: 0 auto;
+            padding-top: 15px;
+            width: 20px;
           }
         }
+      }
     }
+  }
+  .mainIndex .sectionIndex-dos .gridIndexDos {
+    grid-template-columns: 1fr;
+  }
+  .mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: none;
+  }
 }
