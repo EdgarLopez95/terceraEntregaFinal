@@ -11,3 +11,25 @@ $anchoMaximo: 1200px;
   margin: 0 10px;
   font-size: 1.5rem;
 }
+
+%estilosFooter {
+  height: 100%;
+  width: 100%;
+  background-color: $colorFondoOscuro;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 70px 0 70px 0;
+ 
+}
+
+%h3titulos {
+  font-weight: bolder;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  width: 20%;
+  
+}

@@ -45,6 +45,46 @@
   }
 }
 .mainIndex {
-  height: 100vh;
+  height: 70vh;
   background-color: $colorAzulOscuro;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .izquierdo {
+    @extend %estilosFooter;
+    background-color: $colorFondoOscuro;
+    h3 {
+        @extend %h3titulos;
+    }
+    nav {
+      ul {
+        margin-top: 10px;
+      }
+    }
+  }
+  .centro {
+    @extend %estilosFooter;
+    background-color: $colorAmarillo;
+    color: $colorAzulOscuro;
+    h3{
+        @extend %h3titulos;
+        border-bottom: 1px solid $colorFondoOscuro;
+    }
+    p{
+        margin: 20px 0;
+    }
+  }
+  .derecho {
+    @extend %estilosFooter;
+    background-color: $colorFondoOscuro;
+    h3{
+        @extend %h3titulos;
+    }
+    img {
+      width: 30px;
+      margin: 5px auto;
+    }
+  }
 }

@@ -183,6 +183,26 @@ body {
   font-size: 1.5rem;
 }
 
+.footer .derecho, .footer .centro, .footer .izquierdo {
+  height: 100%;
+  width: 100%;
+  background-color: #02081e;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 70px 0 70px 0;
+}
+
+.footer .derecho h3, .footer .centro h3, .footer .izquierdo h3 {
+  font-weight: bolder;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  width: 20%;
+}
+
 .heder .nav {
   width: 100%;
   height: 10rem;
@@ -218,8 +238,36 @@ body {
 }
 
 .mainIndex {
-  height: 100vh;
+  height: 70vh;
   background-color: #000a2f;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer .izquierdo {
+  background-color: #02081e;
+}
+.footer .izquierdo nav ul {
+  margin-top: 10px;
+}
+.footer .centro {
+  background-color: #ffd400;
+  color: #000a2f;
+}
+.footer .centro h3 {
+  border-bottom: 1px solid #02081e;
+}
+.footer .centro p {
+  margin: 20px 0;
+}
+.footer .derecho {
+  background-color: #02081e;
+}
+.footer .derecho img {
+  width: 30px;
+  margin: 5px auto;
 }
 
 @media screen and (max-width: 768px) {
